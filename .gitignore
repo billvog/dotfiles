@@ -1,0 +1,15 @@
+# Ignore everyhing...
+/*
+karabiner/automatic_backups
+tmux/plugins
+.DS_Store
+
+# ...except these files/folders
+!.gitignore
+!fish
+!karabiner
+!nvim
+!omf
+!tmux
+!wezterm
+
