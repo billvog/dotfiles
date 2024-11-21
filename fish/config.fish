@@ -5,6 +5,12 @@ set fish_greeting
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 
+# set the default editor to nvim
+set -x EDITOR nvim
+
+# set the config folder
+set -x XDG_CONFIG_HOME $HOME/.config
+
 # my aliases
 alias nr="npm run"
 alias c="clear"

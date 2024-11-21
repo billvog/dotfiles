@@ -1,0 +1,6 @@
+os:
+  editPreset: "nvim"
+gui:
+  theme:
+    selectedLineBgColor:
+      - black
