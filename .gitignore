@@ -6,6 +6,7 @@ tmux/plugins
 
 # ...except these files/folders
 !.gitignore
+!README.md
 !fish
 !karabiner
 !nvim
