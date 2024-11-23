@@ -57,7 +57,7 @@ return {
       sections = {
         lualine_c = {
           { "filename" },
-          { "nvim_treesitter#statusline" },
+          { "nvim-treesitter#statusline" },
         },
         lualine_y = {
           {
@@ -73,3 +73,4 @@ return {
     })
   end,
 }
+
