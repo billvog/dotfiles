@@ -74,14 +74,6 @@ return {
           { "pretty_path" },
         },
       },
-      winbar = {
-        lualine_c = {
-          {
-            "navic",
-            color_correction = "dynamic",
-          },
-        },
-      },
       extensions = { "nvim-tree" },
     })
   end,
