@@ -12,15 +12,15 @@ set -x EDITOR nvim
 set -x XDG_CONFIG_HOME $HOME/.config
 
 # my aliases
-alias nr="npm run"
 alias c="clear"
 alias d="docker"
-alias sail="./vendor/bin/sail"
-alias vim="nvim"
+alias nr="npm run"
+alias lg="lazygit"
 alias ls="eza --icons always"
+alias sail="./vendor/bin/sail"
 
 # pnpm
-set -gx PNPM_HOME "/Users/billvog/Library/pnpm"
+set -gx PNPM_HOME "/Users/$USER/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
