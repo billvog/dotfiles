@@ -1,6 +1,9 @@
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+    "bwpge/lualine-pretty-path",
+  },
   config = function()
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
@@ -56,8 +59,7 @@ return {
       },
       sections = {
         lualine_c = {
-          { "filename" },
-          { "nvim-treesitter#statusline" },
+          { "pretty_path" },
         },
         lualine_y = {
           {
@@ -65,12 +67,22 @@ return {
             cond = lazy_status.has_updates,
             color = { fg = "#ff9e64" },
           },
-          { "encoding" },
-          { "fileformat" },
-          { "filetype" },
         },
       },
+      inactive_sections = {
+        lualine_c = {
+          { "pretty_path" },
+        },
+      },
+      winbar = {
+        lualine_c = {
+          {
+            "navic",
+            color_correction = "dynamic",
+          },
+        },
+      },
+      extensions = { "nvim-tree" },
     })
   end,
 }
-
