@@ -3,12 +3,14 @@ return {
   dependencies = "nvim-tree/nvim-web-devicons",
   config = function()
     local nvimtree = require("nvim-tree")
+    local utils = require("bill.core.utils")
 
     -- recommended settings from nvim-tree documentation
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
     nvimtree.setup({
+      hijack_cursor = true,
       view = {
         width = 50,
         side = "right",
@@ -18,6 +20,9 @@ return {
         enable = true,
       },
       renderer = {
+        root_folder_label = function(path)
+          return utils.compact_path(path)
+        end,
         indent_markers = {
           enable = true,
         },
