@@ -1,9 +1,13 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
+local api = vim.api
 
-opt.relativenumber = true
 opt.number = true
+
+-- show relative line numbers, except in insert mode
+api.nvim_create_autocmd("InsertEnter", { command = [[set norelativenumber]] })
+api.nvim_create_autocmd("InsertLeave", { command = [[set relativenumber]] })
 
 -- tabs & indentation
 opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
