@@ -1,5 +1,8 @@
 os:
   editPreset: "nvim"
+git:
+  paging:
+    externalDiffCommand: "difft --color=always"
 gui:
   theme:
     selectedLineBgColor:
