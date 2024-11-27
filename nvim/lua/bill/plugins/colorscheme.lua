@@ -11,6 +11,7 @@ return {
         transparency = true,
       },
       highlight_groups = {
+        CursorLine = { bg = palette.highlight_low },
         IblIndent = { fg = palette.highlight_med },
         IblScope = { fg = palette.muted },
       },

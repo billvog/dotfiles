@@ -6,7 +6,7 @@ config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 16.0
 
 local my_theme = wezterm.color.get_default_colors()
-my_theme.background = "#111111"
+my_theme.background = "#121212"
 
 config.color_schemes = {
 	["Bill's Theme"] = my_theme,
