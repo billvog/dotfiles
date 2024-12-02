@@ -16,7 +16,7 @@ alias c="clear"
 alias d="docker"
 alias nr="npm run"
 alias lg="lazygit"
-alias ls="eza --icons always"
+alias ls="eza"
 alias sail="./vendor/bin/sail"
 
 # pnpm

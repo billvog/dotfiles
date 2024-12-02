@@ -1,4 +1,5 @@
 package bass
 package foreign-env
+package https://github.com/IlanCosman/tide
 package https://github.com/jhillyerd/plugin-git
 theme default
