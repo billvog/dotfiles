@@ -17,6 +17,8 @@ opt.autoindent = true -- copy indent from current line when starting new one
 
 opt.wrap = false
 
+opt.scrolloff = 8 -- keep 8 lines above and below cursor when scrolling
+
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
