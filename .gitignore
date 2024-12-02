@@ -1,6 +1,7 @@
 # Ignore everyhing...
 /*
 karabiner/automatic_backups
+fish/fish_variables
 tmux/plugins
 .DS_Store
 
