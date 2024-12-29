@@ -31,7 +31,7 @@ function nvm
 end
 
 set -x NVM_DIR ~/.nvm
-nvm use default --silent
+nvm use node 20 --silent
 
 # for compilers to find ruby
 set -gx LDFLAGS "-L/opt/homebrew/opt/ruby/lib"
