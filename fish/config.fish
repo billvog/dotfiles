@@ -6,7 +6,7 @@ set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 
 # set the default editor to nvim
-set -x EDITOR nvim
+set -x EDITOR vim
 
 # set the config folder
 set -x XDG_CONFIG_HOME $HOME/.config

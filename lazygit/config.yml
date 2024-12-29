@@ -3,7 +3,3 @@ os:
 git:
   paging:
     externalDiffCommand: "difft --color=always"
-gui:
-  theme:
-    selectedLineBgColor:
-      - black

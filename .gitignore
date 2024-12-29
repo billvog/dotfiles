@@ -15,4 +15,5 @@ tmux/plugins
 !tmux
 !wezterm
 !lazygit
+!ghostty
 
