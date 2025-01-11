@@ -11,7 +11,11 @@ set -x EDITOR vim
 # set the config folder
 set -x XDG_CONFIG_HOME $HOME/.config
 
-# my aliases
+# configure brew bundle
+set -x HOMEBREW_BUNDLE_FILE $XDG_CONFIG_HOME/Brewfile
+set -x HOMEBREW_BUNDLE_DUMP_NO_VSCODE true
+
+# aliases
 alias c="clear"
 alias d="docker"
 alias nr="npm run"
@@ -41,8 +45,4 @@ set -gx CPPFLAGS "-I/opt/homebrew/opt/ruby/include"
 fish_add_path /opt/homebrew/bin/
 fish_add_path /opt/homebrew/opt/ruby/bin
 fish_add_path ~/.local/share/gem/ruby/3.3.0/bin
-
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
 
