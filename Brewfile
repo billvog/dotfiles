@@ -23,6 +23,7 @@ brew "oven-sh/bun/bun"
 brew "stripe/stripe-cli/stripe"
 cask "ghostty"
 cask "ngrok"
+cask "screen-studio"
 mas "Bitwarden", id: 1352778147
 mas "CapCut", id: 1500855883
 mas "DevCleaner", id: 1388020431
