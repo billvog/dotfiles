@@ -1,20 +1,21 @@
 # Ignore everyhing...
 /*
-karabiner/automatic_backups
-fish/fish_variables
-tmux/plugins
 .DS_Store
+fish/fish_variables
+gh/hosts.yml
+karabiner/automatic_backups
+tmux/plugins
 
 # ...except these files/folders
 !.gitignore
 !README.md
 !Brewfile
 !fish
+!gh
+!ghostty
 !karabiner
 !nvim
 !omf
 !tmux
-!wezterm
 !lazygit
-!ghostty
 
