@@ -17,11 +17,14 @@ set -x HOMEBREW_BUNDLE_DUMP_NO_VSCODE true
 
 # aliases
 alias c="clear"
-alias d="docker"
 alias nr="npm run"
 alias lg="lazygit"
 alias ls="eza"
 alias sail="./vendor/bin/sail"
+
+# abbreviations
+abbr -a dcu 'docker compose up -d'
+abbr -a dcs 'docker compose stop'
 
 # pnpm
 set -gx PNPM_HOME "/Users/$USER/Library/pnpm"
