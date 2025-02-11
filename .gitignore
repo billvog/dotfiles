@@ -8,8 +8,9 @@ tmux/plugins
 
 # ...except these files/folders
 !.gitignore
-!README.md
 !Brewfile
+!README.md
+!setup-mac.sh
 !fish
 !gh
 !ghostty
