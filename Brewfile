@@ -22,8 +22,10 @@ brew "uv"
 brew "zig"
 brew "oven-sh/bun/bun"
 brew "stripe/stripe-cli/stripe"
+cask "anydesk"
 cask "ghostty"
 cask "ngrok"
+cask "rectangle-pro"
 cask "screen-studio"
 mas "Bitwarden", id: 1352778147
 mas "CapCut", id: 1500855883
