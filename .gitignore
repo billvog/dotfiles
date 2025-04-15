@@ -18,6 +18,7 @@ tmux/plugins
 !nvim
 !omf
 !rectangle
+!stats
 !tmux
 !lazygit
 
