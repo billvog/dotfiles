@@ -5,6 +5,7 @@
                 "rules": [
                     {
                         "description": "Option + hjkl to arrow keys Vim",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -100,6 +101,32 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "0" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 53296,
+                        "vendor_id": 13364
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "0" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 53297,
+                        "vendor_id": 13364
+                    },
                     "simple_modifications": [
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
