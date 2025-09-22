@@ -13,3 +13,5 @@ shell-integration = fish
 shell-integration-features = no-cursor
 
 mouse-hide-while-typing = true
+
+keybind = opt+backspace=text:\x17
