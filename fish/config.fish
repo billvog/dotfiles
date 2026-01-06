@@ -15,9 +15,16 @@ set -x XDG_CONFIG_HOME $HOME/.config
 set -x HOMEBREW_BUNDLE_FILE $XDG_CONFIG_HOME/Brewfile
 set -x HOMEBREW_BUNDLE_DUMP_NO_VSCODE true
 
+# android sdk
+set -gx ANDROID_SDK_ROOT "/Volumes/T7/Library/Android/sdk"
+set -gx ANDROID_HOME "/Volumes/T7/Library/Android/sdk" #(Deprecated, but some programs still using it to locate SDK)
+set -gx ANDROID_AVD_HOME "/Volumes/T7/Library/Android/avd"
+set -gx PATH "$ANDROID_HOME/cmdline-tools/latest/bin" $PATH
+set -gx PATH "$ANDROID_HOME/emulator" $PATH
+set -gx PATH "$ANDROID_HOME/platform-tools" $PATH
+
 # aliases
 alias c="clear"
-alias nr="npm run"
 alias lg="lazygit"
 alias ls="eza"
 alias sail="./vendor/bin/sail"
@@ -25,6 +32,7 @@ alias sail="./vendor/bin/sail"
 # abbreviations
 abbr -a dcu 'docker compose up -d'
 abbr -a dcs 'docker compose stop'
+abbr -a nr  'npm run'
 
 # pnpm
 set -gx PNPM_HOME "/Users/$USER/Library/pnpm"
