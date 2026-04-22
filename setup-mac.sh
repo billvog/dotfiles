@@ -21,4 +21,9 @@ defaults write -g InitialKeyRepeat -int 25
 killall Finder
 killall Dock
 
+PRIVATE_SETUP="$HOME/.config/setup-mac-private.sh"
+if [ -f "$PRIVATE_SETUP" ]; then
+    sh "$PRIVATE_SETUP"
+fi
+
 echo "MacOS setup complete 😎"
