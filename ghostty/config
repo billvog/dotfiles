@@ -1,5 +1,5 @@
 theme = Wez
-background = 121212
+background = 1a1a1a
 
 background-opacity = 0.97
 background-blur-radius = 20
@@ -8,6 +8,7 @@ font-family = MesloLGS Nerd Font Mono
 font-size = 16
 
 cursor-style = block
+# cursor-style-blink = false
 
 shell-integration = fish
 shell-integration-features = no-cursor
